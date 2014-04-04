@@ -1,0 +1,10 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/git (0.0.3)
+    puppetlabs/vcsrepo (0.2.0)
+
+DEPENDENCIES
+  puppetlabs/git (~> 0.0)
+  puppetlabs/vcsrepo (~> 0.0)
+
