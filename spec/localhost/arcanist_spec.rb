@@ -24,4 +24,12 @@ describe 'validating' do
         it { should return_exit_status 0 }
         its(:stdout) { should_not match /need to install|missing/ }
     end
+
+    # php-apc requires phpapi-20090626, which is a virtual package provided by
+    # php5-fpm and also mod_php. We don't want or need php-fpm because it
+    # consumes port 9000 for no good reason.
+
+    describe package('php5-fpm') do
+        it { should_not be_installed }
+    end
 end
