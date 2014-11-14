@@ -1,12 +1,13 @@
 FORGE
-  remote: http://forge.puppetlabs.com
+  remote: https://forgeapi.puppetlabs.com
   specs:
-    puppetlabs/git (0.0.3)
-    puppetlabs/stdlib (3.2.1)
-    puppetlabs/vcsrepo (0.2.0)
+    puppetlabs-git (0.2.0)
+      puppetlabs-vcsrepo (>= 0.1.0)
+    puppetlabs-stdlib (4.4.0)
+    puppetlabs-vcsrepo (1.2.0)
 
 DEPENDENCIES
-  puppetlabs/git (~> 0.0)
-  puppetlabs/stdlib (~> 3.0)
-  puppetlabs/vcsrepo (~> 0.0)
+  puppetlabs-git (~> 0.0)
+  puppetlabs-stdlib (< 5.0.0, >= 3.0.0)
+  puppetlabs-vcsrepo (< 2.0.0)
 
